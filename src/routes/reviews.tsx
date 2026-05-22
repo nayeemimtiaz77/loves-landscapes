@@ -14,8 +14,8 @@ export const Route = createFileRoute("/reviews")({
       { property: "og:title", content: "Customer Reviews — Loves Landscapes" },
       { property: "og:description", content: "Real Facebook reviews from happy customers across Northamptonshire." },
       { property: "og:url", content: "/reviews" },
-      { property: "og:image", content: "/services/lawn-care.jpg" },
-      { name: "twitter:image", content: "/services/lawn-care.jpg" },
+      { property: "og:image", content: "/logo/logo.jpg" },
+      { name: "twitter:image", content: "/logo/logo.jpg" },
     ],
     links: [{ rel: "canonical", href: "/reviews" }],
   }),
@@ -34,7 +34,7 @@ function ReviewsPage() {
       />
 
       <section className="container-prose py-16">
-        <div className="text-center max-w-xl mx-auto mb-10">
+        <div className="text-center max-xl mx-auto mb-10">
           <div className="inline-flex items-center gap-1 text-accent mb-3">
             {Array.from({ length: 5 }).map((_, k) => <Star key={k} className="h-6 w-6 fill-current" />)}
           </div>

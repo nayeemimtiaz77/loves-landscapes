@@ -70,10 +70,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Professional landscaping, garden maintenance, lawn care, hedge cutting & grounds maintenance across Northamptonshire. 12 years experience. Free quotes." },
       { property: "og:site_name", content: SITE.name },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: "https://id-preview--18063fb6-baca-46ae-a9f3-9d8a4f82c845.lovable.app/logo/logo.jpg" },
+      { property: "og:image", content: "/logo/logo.jpg" },
       { property: "og:image:alt", content: "Loves Landscapes & Garden Services logo" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "https://id-preview--18063fb6-baca-46ae-a9f3-9d8a4f82c845.lovable.app/logo/logo.jpg" },
+      { name: "twitter:image", content: "/logo/logo.jpg" },
       { name: "twitter:image:alt", content: "Loves Landscapes & Garden Services logo" },
       { property: "og:title", content: "Loves Landscapes & Garden Services | Northamptonshire" },
       { name: "twitter:title", content: "Loves Landscapes & Garden Services | Northamptonshire" },
@@ -122,4 +122,3 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
-
